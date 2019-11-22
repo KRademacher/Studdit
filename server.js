@@ -21,7 +21,11 @@ mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://<admin>:<admin123>@ds033841.mlab.com:33841/studdit');
+mongoose.connect('mongodb://admin:admin123@ds033841.mlab.com:33841/studdit').then(() => {
+	console.log('Connected to mlab.');
+}, (err) => {
+	console.log('error', err);
+});
 
 app.use('/api', routes);
 
