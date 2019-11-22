@@ -21,7 +21,7 @@ mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://localhost/studdit');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds033841.mlab.com:33841/studdit');
 
 app.use('/api', routes);
 
