@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14",
+    "mongoose": "^5.13.15",
     "neo4j-driver": "^1.7.2",
     "nodemon": "^1.18.7"
   }
